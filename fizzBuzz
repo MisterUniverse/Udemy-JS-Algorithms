@@ -1,0 +1,22 @@
+// Write a function that if a number 3 or greater and is divisable by 3 returns 'fizz', by 5 returns 'buzz', by both returns 'fizzbuzz', or none ''.
+
+let printfizz = 'fizz'; 
+let printbuzz = 'buzz';
+let printfizzbuzz = 'fizzbuzz';
+function fizzBuzz(num) {
+	if(num % 3 ===0 && num % 5 === 0) {
+		console.log(printfizzbuzz);
+	} else if(num % 5 === 0) {
+		console.log(printbuzz);
+	} else if (num % 3 === 0) {
+		console.log(printfizz);
+	}else {
+		console.log('');
+	}
+}
+fizzBuzz(75);
+fizzBuzz(15);
+fizzBuzz(3);
+fizzBuzz(5);
+fizzBuzz(8);
+fizzBuzz(20);
