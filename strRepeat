@@ -1,0 +1,10 @@
+// Write a function that takes in a string and number that repeats the string that number of times.
+
+function strRepeat(str, num) {
+	let storage = '';
+	while ( num > 0) {
+		storage += str;
+		num--;
+	}
+	return storage;
+}
