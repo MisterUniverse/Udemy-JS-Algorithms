@@ -1,0 +1,16 @@
+// Write a function that takes in a string and capitalizes the first letter of each word.
+
+let cap1 = 'I am a coding god';
+let cap2 = 'I would like to work for google';
+
+function capFirst(str) {
+	let step1 = str.split(' ');
+    step1 = step1.map((ele) => {
+		const first = ele.charAt(0).toUpperCase();
+		ele = first.concat(ele.slice(1, ele.length));
+		return ele;
+	});
+
+	step1 = step1.join(' ');
+	console.log(step1);
+}
