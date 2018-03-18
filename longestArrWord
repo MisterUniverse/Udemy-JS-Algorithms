@@ -1,0 +1,11 @@
+// Write a function that takes in a string and returns the largest word in the array.
+let str1 = 'hello world to be soon';
+
+function longestArrWord(str) {
+	let strArr = strArr.replace(/[\W_]/g, '').split(' ');
+	let longWord = '';
+	strArr.forEach((ele) => {
+		longWord = ele.length > longWord.length ? ele : longWord;
+	})
+	return longWord;
+}
