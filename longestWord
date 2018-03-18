@@ -1,0 +1,13 @@
+// Write a function that takes in a string and returns the length of the longest string.
+
+let str1 ='I am a coding god.';
+let str2 = 'I aint hmm hmm pfft!';
+
+function longestWord (str) {
+	let longWord = 0;
+	let strArr = str.split(' ');
+	for(let i = 0; i < strArr[i].length; i++) {
+		longWord = longWord < strArr[i].length ? strArr[i].length : false;
+	}
+	return longWord;
+}
