@@ -1,0 +1,6 @@
+// Write a function that takes in a string and reverses its value.
+
+function reverseStr(word) {
+	let reversedWord = word.split('').reverse().join('');
+	console.log(reversedWord);
+}
