@@ -1,0 +1,5 @@
+// Write a function that takes in a string and returns a boolean on whether or not it is a digit. A digit is defined as a number between 0 - 9.
+
+function isDigit(str) {
+	return isFinite(str);
+}
